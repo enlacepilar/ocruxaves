@@ -1,3 +1,8 @@
+### Realizado por Hugo Boulocq
+## Hay una web realizada en Morbirise y un acceso al catálogo al final
+### Tambien estan los decoradores para agregar y borrar libros, pero los html no fueron agregados.
+
+
 from flask import Flask, url_for,render_template, request, abort
 import sqlite3
 app= Flask (__name__)
