@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.12.3, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.12.3, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="../static/assets/images/logo4.png" type="image/x-icon">
+  <meta name="description" content="Web Builder Description">
+  
+  
+  <title>ver_libros</title>
+  <link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="../static/assets/tether/tether.min.css">
+  <link rel="stylesheet" href="../static/assets/theme/css/style.css">
+  <link rel="preload" as="style" href="../static/assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="../static/assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+  <section class="mbr-section content4 cid-s0IbZI7r5R" id="content4-e">
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-2">
+                    Catalogo - resultados</h2>
+                <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">Ediciones Ocruxaves<br><br><a href="/">Volver</a>
+                </h3>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<h2 <center> Resultado de la búsqueda </h2>
+<table border=5>  
+    <thead>  
+        <td>Nro.</td>  
+        <td>Año</td>  
+        <td>Título</td>  
+        <td>Género</td>
+        <td>Autor</td>
+        <td>Comentario</td>  
+    </thead>  
+       
+    {% for row in rows %}  
+       
+        <tr>  
+            <td>{{row["id"]}}</td>  
+            <td>{{row["año"]}}</td>  
+            <td>{{row["titulo"]}}</td>  
+            <td>{{row["genero"]}}</td>  
+        	<td>{{row["autor"]}}</td> 
+        	<td>{{row["comentario"]}}</td> 
+        </tr>  
+       
+    {% endfor %}  
+</table>  
+<br><br>  
+
+  <section class="engine"><a href="https://mobirise.info/k">develop free website</a></section><script src="../static/assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="../static/assets/popper/popper.min.js"></script>
+  <script src="../static/assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../static/assets/tether/tether.min.js"></script>
+  <script src="../static/assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="../static/assets/theme/js/script.js"></script>
+  
+<a href="/">Volver</a>
+  
+</body>
+</html>
