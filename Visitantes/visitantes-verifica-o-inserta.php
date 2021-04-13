@@ -1,5 +1,5 @@
 <?php
-require('Configuracion/conexion.php');
+require('../Configuracion/conexion.php');
 
 $datos = json_decode(file_get_contents('php://input'));
 
@@ -37,7 +37,7 @@ foreach ($datos as $clave=>$valor)
 $ubicacion = $pais . ", ". $provincia;
 
 //Averigua el ultimo usuario y el pais conectado asi no agrega duplicados.
-$averigua = "SELECT id, ip, pais FROM visitantes where id = (SELECT max(id) FROM visitantes)";
+$averigua = "SELECT id, ip, pais, empresa FROM visitantes where id = (SELECT max(id) FROM visitantes)";
 $traer =  $base->prepare($averigua);
 $traer->execute();
 $traeVisitante = $traer->fetchall(PDO::FETCH_ASSOC);
@@ -45,7 +45,7 @@ if (count($traeVisitante)>0)
 {
     foreach ($traeVisitante as $datosBase)
     {
-        if ($ip == $datosBase['ip'] && $ubicacion == $datosBase['pais']){
+        if ($ip == $datosBase['ip'] && $ubicacion == $datosBase['pais'] && $empresa == "Ocruxaves"){
 
             echo json_encode(array("resultado"=>" Sin cambios", "idBase"=>$datosBase['id']));
 

@@ -21,6 +21,9 @@
   <!-- DATATABLES -->
   <link rel="stylesheet" href="assets/Datatables/jquery.dataTables.min.css">
 
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="assets/fontawesome-free-5.15.2-web/css/all.min.css">
+
   
   
 </head>
@@ -100,6 +103,9 @@ foreach ($registro as $datos)
     <script src="assets/Datatables/vfs_fonts.js"></script>
     <script src="assets/Datatables/buttons.html5.min.js"></script>
     <script src="assets/Datatables/buttons.print.min.js"></script>
+
+    <!-- FontAwesome -->
+    <script src="assets/fontawesome-free-5.15.2-web/js/all.min.js"></script>
 
   
 <a href="/">Volver</a>
